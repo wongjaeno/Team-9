@@ -2,7 +2,9 @@
 ## Website: How might we leverage technology to encourage and promote healthy living?
 ## Target Audience: General Public
 ## Focus: Physical and Mental health
+<https://coolors.co/palette/f0ead2-dde5b6-adc178-a98467-6c584c>
 > ### Log-In Page
+
 >Features
 >1. Tips and Tricks 
 >> a. Mental
