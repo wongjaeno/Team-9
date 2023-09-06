@@ -15,16 +15,16 @@
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li>
                     <a href="#">Tips and Tricks</a>
                 </li>
                 <li>
-                    <a href="record.html">Record your habits</a>
+                    <a href="record.php">Record your habits</a>
                 </li>
                 <li>
-                    <a href="points.html">Pet</a>
+                    <a href="points.php">Pet</a>
                 </li>
             </ul>
             <div class="burger">
