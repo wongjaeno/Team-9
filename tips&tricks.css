@@ -1,0 +1,23 @@
+
+#mental_tips {
+    padding-left: 20px;
+}
+.physical {
+    padding-top: 20px;
+}
+
+.photo {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(physical.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo h3 {
+    text-align: center;
+}
+
+.mental {
+    padding-top: 20px;
+}
