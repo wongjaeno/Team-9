@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="navbar.css">
-    <link rel="stylesheet" type="text/css" href="tips&tricks.css">
+    <link rel="stylesheet" type="text/css" href="./style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./style/tips&tricks.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <lottie-player src="https://lottie.host/8c1e37ac-9f45-468a-a593-1864ce7bf7e0/nQW92ccATT.json" background="#ffffff" speed="1" style="width: 300px; height: 300px" mode="normal"></lottie-player>
 </head>
@@ -18,19 +18,19 @@
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="home.php">Home</a>
                 </li>
                 <li>
                     <a href="#">Tips and Tricks</a>
                 </li>
                 <li>
-                    <a href="record.html">Record your habits</a>
+                    <a href="record.php">Record your habits</a>
                 </li>
                 <li>
-                    <a href="points.html">Pet</a>
+                    <a href="points.php">Pet</a>
                 </li>
                 <li>
-                    <a href="login/index.php">Log In</a>
+                    <a href="php/logout.php"> <button class="btn">Log Out</button> </a>
                 </li>
             </ul>
             <div class="burger">
