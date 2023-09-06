@@ -17,13 +17,16 @@
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="tips&tricks.html">Tips and Tricks</a>
+                    <a href="tips&tricks.php">Tips and Tricks</a>
                 </li>
                 <li>
-                    <a href="record.html">Record your habits</a>
+                    <a href="record.php">Record your habits</a>
                 </li>
                 <li>
-                    <a href="points.html">Pet</a>
+                    <a href="points.php">Pet</a>
+                </li>
+                <li>
+                    <a href="signup.php">Sign Up</a>
                 </li>
             </ul>
             <div class="burger">
