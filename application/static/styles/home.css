@@ -41,12 +41,12 @@ img {
 	color: white;
 	background-color: crimson;
 }
-.brand h1 {
+.brand h1, h2 {
 	font-size: 3rem;
 	text-transform: uppercase;
 	color: white;
 }
-.brand h1 span {
+.brand h1, h2 span {
 	color: crimson;
 }
 

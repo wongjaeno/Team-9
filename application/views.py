@@ -31,7 +31,7 @@ def adding_new_expenses():
 
 
 # READ
-@views.route('/expenses')
+@views.route('/journal')
 @login_required
 def show_expenses():
     expenses_user = Expenses.query.filter_by(user=current_user.email).all()
@@ -40,7 +40,7 @@ def show_expenses():
     for expense in expenses_user:
         total_amount += expense.amount
 
-    return render_template("expenses.html", expenses=expenses_user,
+    return render_template("journal.html", expenses=expenses_user,
                            name_user=current_user.name, total=round(total_amount, 2))
 
 

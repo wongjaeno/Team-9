@@ -2,20 +2,20 @@
 
 {% block body %}
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="../static/styles/expenses.css">
+<link rel="stylesheet" href="../static/styles/journal.css">
 
 {% if expenses %}
 <br>
 <br>
 <div class="card">
     <div class="card-title">
-        <p>Hello {{ name_user }}, these are your expenses:</p>
+        <p>Hello {{ name_user }}, these are your journal entries:</p>
     </div>
     <div class="card-body">
         <table class="table table-striped" id="myTable">
             <thead>
                 <tr>
-                    <th>Type</th>
+                    <th>Title</th>
                     <th>Description of the expense</th>
                     <th>Date</th>
                     <th>Amount (S$)</th>
