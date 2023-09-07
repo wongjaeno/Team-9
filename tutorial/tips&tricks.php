@@ -39,10 +39,40 @@
             </div>
         </nav>
         <script src="navbar.js"></script>
-
+        <div class="words">
+            <div class="background">
+                <div class="title">
+                    <h1>How to <span>UPGRADE</span> your health</h1>
+                </div>
+            </div>
+            <div class="container">
+                <a href="https://www.healthline.com/health/fitness-exercise/10-best-exercises-everyday#start-here" target="_blank">
+                    <div class="grid-item one">1<br>Get regular exercise</div>
+                </a>
+                <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank">
+                    <div class="grid-item two">2<br>Eat healthy and regularly</div>
+                </a>
+                <a href="https://www.healthline.com/nutrition/how-much-water-should-you-drink-per-day#how-much-you-need" target="_blank">
+                    <div class="grid-item three">3<br>Remember to hydrate</div>
+                </a>
+                <a href="https://www.healthline.com/health/sleep/sleep-calculator#sleep-calculator" target="_blank">
+                    <div class="grid-item four">4<br>Get enough sleep, at least 7 to 8 hours</div>
+                </a>
+                <a href="https://www.healthline.com/health/how-to-think-positive#tips" target="_blank">
+                    <div class="grid-item five">5<br>Focus on positivity</div>
+                </a>
+                <a href="https://www.independentage.org/get-advice/wellbeing/relationships/staying-connected" target="_blank">
+                    <div class="grid-item six">6<br>Stay connected and reach out to friends and family regularly</div>
+                </a>
+                <a href="https://zenhabits.net/meditation-guide/" target="_blank">
+                    <div class="grid-item seven">7<br>Meditate and work on being present</div>
+                </a>
+                <a href="https://kidshealth.org/en/teens/gratitude-practice.html" target="_blank">
+                    <div class="grid-item eight">8<br>Practise gratitude</div>
+                </a>
+            </div>
+        </div>
 
     </div>
-
-
-    </body>
+</body>
 </html>
