@@ -10,9 +10,33 @@
 </head>
 <body>
 <style>
-    .nav-links li a button {
-        text-decoration: none;
+    .btn {
+        border-radius: 40px;
+        background-color: white;
+        padding: 8px 15px;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+
+    .logo {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+
+
     nav {
         position: relative;
         z-index: 20;
@@ -22,6 +46,113 @@
         min-height: 10vh;
         user-select: none;
         background-color:#ADC178;
+    }
+
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        gap: 100px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 300;
+        font-size: 17px;  
+    }
+
+    .nav-links li:hover a{
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .burger div{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    @media screen and (max-width:1500px){
+        .nav-links{
+            width:60%;
+        }
+    }
+
+
+    @media screen and (max-width:800px){
+        body {
+            overflow-x: hidden;
+        }
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 90vh;
+            top: 10vh;
+            background-color: #ADC178;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+            width: 50%;
+            transform: translateX(100%);
+        }
+        .nav-links li {
+            opacity: 0;
+        }
+        .burger {
+            display: block;
+        }
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+        transition: 0.5s ease-in;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .nav-active li a {
+        font-size: 20px;
+    }
+
+    .body-active {
+        overflow: hidden;
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 </style>
 <div class="content">
@@ -66,24 +197,26 @@
         }
         
         ?>
-        <header>Habits Journal</header>
-        <form action="" method="post" class="form">
-                <div class="field input">
-                    <label for="blogtitle">Title</label>
-                    <input type="text" name="blogtitle" id="blogtitle" autocomplete="off" required>
-                </div>
-                <div class="field input">
-                    <label for="blogdate">Date</label>
-                    <input type="datetime-local" name="blogdate" id="blogdate" autocomplete="off" required>
-                </div>
-                <div class="field input">
-                    <label for="blogcontent">Content</label><br>
-                    <input type="text" name="blogcontent" id="blogcontent" autocomplete="off" required style="height:250px; width:500px">
-                </div>
-                <div class="field">
-                    <input type="submit" class="btn" name="submit" value="Post" required>
-                </div>
-        </form>
+        <div class="poop">
+            <header>Habits Journal</header>
+            <form action="" method="post" class="form">
+                    <div class="field input">
+                        <label for="blogtitle">Title</label>
+                        <input type="text" name="blogtitle" id="blogtitle" autocomplete="off" required>
+                    </div>
+                    <div class="field input">
+                        <label for="blogdate">Date</label>
+                        <input type="datetime-local" name="blogdate" id="blogdate" autocomplete="off" required>
+                    </div>
+                    <div class="field input">
+                        <label for="blogcontent">Content</label><br>
+                        <input type="text" name="blogcontent" id="blogcontent" autocomplete="off" required style="height:250px; width:500px">
+                    </div>
+                    <div class="field">
+                        <input type="submit" class="btn" name="submit" value="Post" required>
+                    </div>
+            </form>
+        </div>
         <a href="showrecords.php">See Previous Records</a>
     </div>
     </body>
