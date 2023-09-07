@@ -13,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./style/home.css">
     <title>Home</title>
 </head>
 <body>
@@ -44,7 +45,18 @@
                 <div class="line3"></div>
             </div>
         </nav>
-
+        <div class="welcome-text">
+            <h1><span>Level Up</span> Your Life</h1>
+            <p>Welcome to our website, your ultimate destination for living a healthier life and fostering self-development. 
+            Discover a wealth of tips and tricks to enhance your well-being, from nutrition and fitness to mental health and mindfulness. 
+            With our user-friendly habit-tracking tools, you can monitor your progress, set goals, and embark on a transformative journey towards a happier and healthier you. 
+            Start your path to self-improvement today!
+            </p>
+            <a href="#">
+                <button class="bttn">Get started</button>
+            </a>
+        </div>
+</div>
     <?php
 
     $id = $_SESSION['id'];
@@ -56,7 +68,7 @@
 
     ?>
         <script src="navbar.js"></script>
-</div>
+
 
     <main>
 
