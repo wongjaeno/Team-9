@@ -15,8 +15,6 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="./style/navbar.css">
     <link rel="stylesheet" type="text/css" href="./style/showrecords.css">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <lottie-player src="https://lottie.host/8c1e37ac-9f45-468a-a593-1864ce7bf7e0/nQW92ccATT.json" background="#ffffff" speed="1" style="width: 300px; height: 300px" mode="normal"></lottie-player>
 </head>
 <body>
 <div class="content">
