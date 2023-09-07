@@ -12,7 +12,7 @@ body {
 
 
 .logo {
-    color: rgb(226, 226, 226);
+    color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 20px;
@@ -27,7 +27,7 @@ nav {
     align-items: center;
     min-height: 10vh;
     user-select: none;
-    background:#2696e9;
+    background:#ADC178;
 }
 
 .nav-links{
@@ -42,7 +42,7 @@ nav {
 
 .nav-links li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
@@ -61,7 +61,7 @@ nav {
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: rgb(226, 226, 226);
+    background-color: white;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -82,7 +82,7 @@ nav {
         right: 0px;
         height: 90vh;
         top: 10vh;
-        background-color: #2696e9;
+        background-color: #ADC178;
         display: flex;
         flex-direction: column;
         align-items: center;
