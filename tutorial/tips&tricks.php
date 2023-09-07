@@ -26,9 +26,6 @@
                     <a href="record.php">Record your habits</a>
                 </li>
                 <li>
-                    <a href="points.php">Pet</a>
-                </li>
-                <li>
                     <a href="php/logout.php"> <button class="btn">Log Out</button> </a>
                 </li>
             </ul>
@@ -40,10 +37,8 @@
         </nav>
         <script src="navbar.js"></script>
         <div class="words">
-            <div class="background">
-                <div class="title">
-                    <h1>How to <span>UPGRADE</span> your health</h1>
-                </div>
+            <div class="title">
+                <h1>How to <span>UPGRADE</span> your health</h1>
             </div>
             <div class="container">
                 <a href="https://www.healthline.com/health/fitness-exercise/10-best-exercises-everyday#start-here" target="_blank">

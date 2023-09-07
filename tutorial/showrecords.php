@@ -35,9 +35,6 @@
                 <a href="record.php">Record your habits</a>
             </li>
             <li>
-                <a href="points.php">Pet</a>
-            </li>
-            <li>
                 <a href="php/logout.php"> <button class="btn">Log Out</button> </a>
             </li>
         </ul>

@@ -53,6 +53,12 @@ nav {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.nav-links li a button {
+    border-color: aliceblue;
+    border: inset 12px;
+    padding: 10px;
+}
+
 .burger {
     display: none;
     cursor: pointer;
