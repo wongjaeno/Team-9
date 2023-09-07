@@ -162,6 +162,7 @@
     header{
     text-align: center;
     padding-top: 20px;
+    font-size: 2em;
     }
 
     .form{
