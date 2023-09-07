@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" type="text/css" href="./style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./style/record.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <lottie-player src="https://lottie.host/8c1e37ac-9f45-468a-a593-1864ce7bf7e0/nQW92ccATT.json" background="#ffffff" speed="1" style="width: 300px; height: 300px" mode="normal"></lottie-player>
 </head>
 <body>
-    <div class="content">
+<div class="content">
         <nav>
             <div class="logo">
                 <h4>HealthMana</h4>
@@ -40,32 +41,40 @@
         </nav>
     
         <script src="navbar.js"></script>
+        <?php
+        
+        include("php/config.php");
+        if(isset($_POST['submit'])){
+           $blogtitle = $_POST['blogtitle'];
+           $blogdate = $_POST['blogdate'];
+           $blogcontent = $_POST['blogcontent'];
 
+           mysqli_query($blog,"INSERT INTO blog(blogtitle,blogdate,blogcontent) VALUES('$blogtitle','$blogdate','$blogcontent')") or die("Error Occured");
+        echo "<div class='message'>
+                  <p>Posted successfully!</p>
+              </div> <br>";
+        }
+        
+        ?>
         <header>Habits Journal</header>
-        <form action="" method="post">
+        <form action="" method="post" class="form">
                 <div class="field input">
                     <label for="blogtitle">Title</label>
                     <input type="text" name="blogtitle" id="blogtitle" autocomplete="off" required>
                 </div>
-
                 <div class="field input">
                     <label for="blogdate">Date</label>
                     <input type="datetime-local" name="blogdate" id="blogdate" autocomplete="off" required>
                 </div>
-
                 <div class="field input">
-                    <label for="blogcontent">Content</label>
-                    <input type="text" name="blogcontent" id="blogcontent" autocomplete="off" required height="50px" width="100px">
+                    <label for="blogcontent">Content</label><br>
+                    <input type="text" name="blogcontent" id="blogcontent" autocomplete="off" required style="height:250px; width:500px">
                 </div>
-
                 <div class="field">
-                    <input type="submit" class="btn" name="submit" value="Register" required>
+                    <input type="submit" class="btn" name="submit" value="Post" required>
                 </div>
-                <div class="links">
-                    Already a member? <a href="index.php">Sign In</a>
-                </div>
-            </form>
-
+        </form>
+        <a href="showrecords.php">See Previous Records</a>
     </div>
     </body>
 </html>
