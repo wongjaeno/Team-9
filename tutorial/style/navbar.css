@@ -53,10 +53,6 @@ nav {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.nav-links li a button {
-    text-decoration: none;
-}
-
 .burger {
     display: none;
     cursor: pointer;

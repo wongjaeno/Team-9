@@ -17,6 +17,21 @@
     <link rel="stylesheet" type="text/css" href="./style/showrecords.css">
 </head>
 <body>
+<style>
+    .nav-links li a button {
+        text-decoration: none;
+    }
+    nav {
+        position: relative;
+        z-index: 20;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 10vh;
+        user-select: none;
+        background-color:#ADC178;
+    }
+</style>
 <div class="content">
     <nav>
         <div class="logo">
