@@ -27,6 +27,11 @@
 
     body {
         font-family: "Poppins", sans-serif;
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        overflow-x: hidden;
+        background: #f0ead2;
     }
 
 

@@ -26,6 +26,11 @@
 
     body {
         font-family: "Poppins", sans-serif;
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        overflow-x: hidden;
+        background: #f0ead2;
     }
 
 
@@ -161,8 +166,8 @@
 
     .form{
         padding: 20px;
-        border-style: inset;
-        border-color: antiquewhite;
+        border: 10px
+        border-color: #6C584C;
         border-radius: 20px;
         margin-left: 450px;
         margin-right: 450px;
@@ -172,8 +177,20 @@
         padding: auto;
     }
 
-    .poop {
-        padding-top: 100px;
+    h1 {
+        font-size: 3em;
+        font-weight: bolder;
+        color: #6C584C;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 2em;
+        font-weight: bolder;
+        color: #6C584C;
+        padding-top: 20px;
+        text-align: center;
     }
 </style>
 <div class="content">
@@ -201,7 +218,9 @@
                 <div class="line3"></div>
             </div>
         </nav>
-    
+
+        <h1>Why Should Track Your Habits?</h1>
+        <p>By tracking our habits, it helps us to be <u>more aware of our good and bad habits</u>.<br>We can look bacck on it to see how we are doing and progress from there.</p>
         <script src="navbar.js"></script>
         <?php
         

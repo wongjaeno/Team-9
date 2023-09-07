@@ -34,6 +34,11 @@
 
     body {
         font-family: "Poppins", sans-serif;
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        overflow-x: hidden;
+        background: #f0ead2;
     }
 
 
@@ -188,35 +193,39 @@
             <div class="line3"></div>
         </div>
     </nav>
+
     <?php
-
-    $query = mysqli_query($blog,"SELECT*FROM blog");
-
-    while($result = mysqli_fetch_assoc($query)){
-        $title = $result['blogtitle'];
-        $datetime = $result['blogdate'];
-        $content = $result['blogcontent'];
-    }
-
-    ?>
-        <script src="navbar.js"></script>
-    
-    <main>
-
-       <div class="main-box top">
-            <div class="top">
-                <div class="title">
-                    <h4><b>Title: <?php echo $title ?></b></h4>
-                </div>
-                <div class="date">
-                    <p><b>Date & Time: <?php echo $datetime ?><b></p>
-                </div>
-                <div class="content">
-                    <p><b>Content: <?php echo $content ?><b></p>
-                </div>
-            </div>
-       </div>
-
-    </main>
+  
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $databasename = "tutorial";
+  
+  // CREATE CONNECTION
+  $conn = mysqli_connect($servername, 
+    $username, $password, $databasename);
+  
+  // GET CONNECTION ERRORS
+  if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+  }
+  
+  // SQL QUERY
+  $query = "SELECT * FROM blog;";
+  // FETCHING DATA FROM DATABASE
+  $result = mysqli_query($conn, $query);
+  
+  if (mysqli_num_rows($result) > 0) {
+      // OUTPUT DATA OF EACH ROW
+      while($row = mysqli_fetch_assoc($result)) {
+          echo "<div>" . "Entry No: " . $row["blogid"] . "<br>" . "Title: " . $row["blogtitle"] . "<br>" . "Date & Time: " . $row["blogdate"] . "<br>" . "Content: " . $row["blogcontent"] . "<hr>" . "</div>";
+      }
+  } else {
+      echo "0 results";
+  }
+  
+  $conn->close();
+  
+?>
 </body>
 </html>
