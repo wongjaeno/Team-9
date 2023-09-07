@@ -12,6 +12,7 @@ body {
     width: 100vw;
     margin: 0px;
     overflow-x: hidden;
+    background: #F0EAD2;
 }
 
 .title {
@@ -35,8 +36,10 @@ body {
 }
 
 .container {
+    margin-left: 20%;
+    width: 60%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 30px;
 }
 
