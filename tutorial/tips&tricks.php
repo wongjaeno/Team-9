@@ -7,8 +7,7 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="./style/navbar.css">
     <link rel="stylesheet" type="text/css" href="./style/tips&tricks.css">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <lottie-player src="https://lottie.host/8c1e37ac-9f45-468a-a593-1864ce7bf7e0/nQW92ccATT.json" background="#ffffff" speed="1" style="width: 300px; height: 300px" mode="normal"></lottie-player>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
     <div class="content">
@@ -39,8 +38,9 @@
                 <div class="line3"></div>
             </div>
         </nav>
-    
         <script src="navbar.js"></script>
+
+
     </div>
 
 
