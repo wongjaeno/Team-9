@@ -29,16 +29,16 @@ body {
     display: inline-block;
 }
 
-.welcome-text h1 {
+.greeting h1 {
+    width: 35%;
     border-right: 5px solid;
-    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     font-size: 100px;
     padding-bottom: 10px;
     text-transform: uppercase;
     animation:
-        typing 2s steps(18), 
+        typing 1s steps(6), 
         cursor .4s step-end infinite alternate;
 }
 
