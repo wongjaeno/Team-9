@@ -154,6 +154,27 @@
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+    header{
+    text-align: center;
+    padding-top: 20px;
+    }
+
+    .form{
+        padding: 20px;
+        border-style: inset;
+        border-color: antiquewhite;
+        border-radius: 20px;
+        margin-left: 450px;
+        margin-right: 450px;
+    }
+
+    .field input{
+        padding: auto;
+    }
+
+    .poop {
+        padding-top: 100px;
+    }
 </style>
 <div class="content">
         <nav>
